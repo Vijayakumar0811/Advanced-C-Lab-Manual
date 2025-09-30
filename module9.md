@@ -13,11 +13,24 @@ Algorithm:
  
 Program:
 
-//type your code here
+```
+int stack[100],top,i;
+void display()
+{
+    for(i=top;i>=0;i--)
+    {
+        printf("%d->",stack[i]);
+    }
+    if(top == -1)
+    {
+        printf("stack is empty\n");
+    }
+}
+```
 
 Output:
 
-//paste your output here
+<img width="979" height="562" alt="image" src="https://github.com/user-attachments/assets/6ffb59ba-5712-481b-ace1-3b16f053f32f" />
 
 
 
@@ -36,11 +49,25 @@ Algorithm:
  
 Program:
 
-//type your code here
-
+```
+int size=3,top=-1;
+float stack[100];
+void push (float data)
+{
+    if (top == size-1 )
+    {
+    printf("stack is full\n");
+    }
+    else
+    {
+        top = top +1;
+        stack[top] = data;
+    }
+}
+```
 Output:
 
-//paste your output here
+<img width="983" height="584" alt="image" src="https://github.com/user-attachments/assets/0c97a6de-5a78-4f2b-9d27-0d55393efbb3" />
 
 
 
@@ -62,11 +89,23 @@ Algorithm:
  
 Program:
 
-//type your code here
-
+```
+int queue[50], rear=-1, front=-1;
+void display()
+{
+    if(front == -1)
+        printf("No elements to display\n");
+        
+    else{
+        for(int i = front;i<=rear;i++){
+            printf("%d ",queue[i]);
+        }
+    }
+}
+```
 Output:
 
-//paste your output here
+<img width="987" height="584" alt="image" src="https://github.com/user-attachments/assets/a7de18a7-f803-4cdd-854e-b960b84a1b4e" />
 
 
 Result:
@@ -86,11 +125,24 @@ Algorithm:
 
 Program:
 
-//type your code here
-
+```
+float queue[50];
+int size=10,front=-1,rear=-1;
+void enqueue(float data)
+{
+    if(rear<size){
+        if(front==-1){
+            front=0;
+        }
+        rear++;
+        queue[rear] = data;
+    }
+    
+}
+```
 Output:
 
-//paste your output here
+<img width="984" height="519" alt="image" src="https://github.com/user-attachments/assets/2a810b58-844c-4091-a1ff-9822a9646daf" />
 
 Result:
 Thus, the program to insert elements in queue using array is verified successfully.
